@@ -25,10 +25,12 @@
     <!-- meta -->
 
 
-<title>Hexo</title>
+<title>no title | Hexo</title>
 
 
 
+
+    <link rel="canonical" href="http://example.com/search/index.html">
 
 
     <!-- OpenGraph -->
@@ -118,33 +120,26 @@
         
     </div>
 
-            <main class="main">
-    
-    <div class="post-list">
-        
             
-                <div class='post-entry content-card'>
-                    <div class="post-entry__header"></div>
-<div class="post-entry__content">
-    <h2 class="post-entry__title">
-        Phi 制铺器 PhiCreator 教程
+<main class="main">
+    <div class="content-card">
+    <h2>
+        
     </h2>
-    
-</div>
-<div class="post-entry__meta">
-    <a href="/archives/2023/05/" class="post-meta__date button">2023-05-26 02:16</a>
-    
- 
-</div>
-<div class="post-entry__tags"></div> 
-<a href="/2023/05/26/Phi%E2%80%8A%E5%88%B6%E9%93%BA%E5%99%A8%20PhiCreator%20%E6%95%99%E7%A8%8B/" class="post-entry__link">Phi 制铺器 PhiCreator 教程</a>
-                </div>
-            
-        
+    <div id="search">
+        <form class="search-form" autocomplete="off">
+            <div class="search-input">
+                <input maxlength="80" type="search" class="search-input" id="search-input" name="s" placeholder="Please enter a keyword..." required>
+            </div>
+        </form>
     </div>
-    
-
-
+</div>
+<div class="search-result" id="search-result">
+    <div class="search-result__notice" id="search-result__notice"></div>
+    <div class="content-card search-result__list" id="search-result__list"></div>
+</div>
+<script>var searchDataFile = "/search.json";</script>
+<script defer src="/js/local-search.js"></script>
 </main>
 
             <footer class="footer">
